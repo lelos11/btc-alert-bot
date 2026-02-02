@@ -90,7 +90,7 @@ class BTCDCAStrategy:
         if divergence <= -30 and base_multiplier == 3:
             base_multiplier = 5
         
-        if fear_greed <= 20 and divergence <= -15:
+        if fear_greed <= 25 and divergence <= -15:
             if base_multiplier == 1:
                 final_multiplier = 2
             elif base_multiplier == 2:
@@ -213,5 +213,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
