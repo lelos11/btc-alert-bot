@@ -7,8 +7,8 @@ from datetime import datetime, time
 import math
 
 # Environment Variables
-TELEGRAM_TOKEN = "8299285517:AAFVk7teghc2tAtp2zzofBfAHAcYemPSKUE"
-TELEGRAM_CHAT_ID = "896487510"
+TELEGRAM_TOKEN = os.getenv("8299285517:AAHdhpnr7GKdgp0oxleLuo8DcUsGhg-OUvU")
+TELEGRAM_CHAT_ID = os.getenv("896487510")
 
 class BTCDCAStrategy:
     """BTC DCA Strategy με Power Law Divergence"""
@@ -213,6 +213,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
